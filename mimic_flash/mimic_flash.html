@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>GakuBot Mimic Flash</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+  <link rel="manifest" href="../favicons/site.webmanifest">
+  <link rel="mask-icon" href="../favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!--<link rel="stylesheet" href="style.css"/>-->
+  <link rel="stylesheet" href="../jquery_bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  nav{
+    border-radius: 5px;
+  }
+  </style>
+  <script></script>
+</head>
+
+<body>
+        <div id="canvas-container" class="canvas-container">
+          <canvas id="cvs" width="500" height="400" style="height:400px; width:500px; margin:auto; background-color: white;"></canvas>
+
+          <!-- give the button below top:0 and position:absolute to bring it into view -->
+          <a id="menu-button" class="btn btn-outline-secondary float-right btn-lg w-25 mx-auto my-3">Menu</a>
+          <div id="canvas-overlay" class="h-100">
+              <div id="game-menu" class="card h-100 text-center">
+                <div class="card-header">
+                  <h1>Gakubot Mimic Flash</h1>
+                </div>
+                <a id="play-now-button" class="btn btn-primary text-white btn-lg w-75 mx-auto my-3"><h2>Play now</h2></a>
+                <a id="how-to-play-button" class="btn btn-primary text-white btn-lg w-75 mx-auto my-3"><h2>How to play</h2></a>
+                <a id="return-button" href="../index.html" class="btn btn-outline-secondary btn-lg w-75 mx-auto my-3"><h2>Back</h2></a>
+                <h6 class="w-75 mx-auto mt-5 text-secondary">This app is supported by ads.<br> If you would like to directly support the creators of this app, please consider <a href="https://support.unicef.org/">donating to UNICEF</a> instead.<br>Thanks for playing.</h6>
+              </div>
+              <div id="how-to-play-explanation" class="card h-100 d-none">
+                <div class="card-header text-center">
+                  <h1>Gakubot Mimic Flash</h1>
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title">This is a machine learning game</h2>
+                  <h4 class="card-text">As you play against the AI, it learns how you play, and begins to play like you</h4>
+                </div>
+                <div class="card-footer ">
+                  <a id="progress-button-load" class="btn btn-primary float-right text-white d-none ml-2 mb-1">Yes</a>
+                  <a id="progress-button" class="btn btn-primary float-right text-white">Rules ▶</a>
+                </div>
+              </div>
+          </div>
+          <div id="continue-canvas-overlay" class="d-none h-100">
+            <div class="card h-100">
+              <div class="card-body">
+                <h1 id="post-game-message-title" class=""></h1>
+                <h2 id="post-game-message" class="card-text"></h2>
+                <h3 id="post-game-results-title" class="mt-4"><u>Results</u></h3>
+                <div id="post-game-results-holder">
+                  <h4 id="post-game-results-played" class="">Played:</h4>
+                  <div>
+                    <h4 id="post-game-results-won" class="result-text card-text">Won:</h4>
+                    <h4 id="post-game-results-lost" class="result-text card-text text-right float-right">Lost:</h4>
+                  </div>
+                  <div>
+                    <div id="post-game-results-won-bar" class="result-bar float-left"></div>
+                    <div id="post-game-results-lost-bar" class="result-bar float-right"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a id="play-again-button" class="btn btn-primary float-right text-white">Play</a>
+              </div>
+            </div>
+          </div>
+          <div id="loader-holder" class="w-100 h-100">
+            <div id="loading-icon" class="loader d-none"></div>
+          </div>
+        </div>
+
+  <script type="text/javascript" src="cordova.js"></script>
+  <script src="../jquery_bootstrap/jquery.js"></script>
+  <script src="../synaptic/dist/synaptic.js"></script>
+  <script src="../jquery_bootstrap/popper.js"></script>
+  <script src="../jquery_bootstrap/bootstrap.js"></script>
+  <script src="../training/training_flash.js"></script>
+  <script src="mimic.js"></script>
+  <script src="../input.js"></script>
+  <script src="../canvas/canvas.js"></script>
+  <script src="../canvas/draw_flash.js"></script>
+  <script src="../ads.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

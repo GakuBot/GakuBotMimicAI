@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "https://www.gakubot.com"
+    id          = "com.gakubot"
+    versionCode = "1"
+    version     = "1.0.0" >
+
+<!-- versionCode is optional and Android only -->
+
+  <name>GakuBot Mimic</name>
+
+  <description>
+      GakuBot Mimic: A machine learning game
+  </description>
+
+  <author href="https://www.gakubot.com" email="gakubot.ai@gmail.com">
+      Peter Devine
+  </author>
+
+  <gap:plugin name="phonegap-admob" source="npm"/>
+  <allow-navigation href="*://*.gakubot.com/*" />
+  <allow-navigation href="*://*.gakubot.com" />
+  <allow-navigation href="*://gakubot.com/*" />
+  <allow-navigation href="*://gakubot.com" />
+  <allow-navigation href="*://support.unicef.org/" />
+
+</widget>
