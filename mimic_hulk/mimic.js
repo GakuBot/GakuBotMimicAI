@@ -58,7 +58,7 @@ function Mimic(){
 
   },
   duel: function(){
-    const isGenerationFinished = this.currentRound % 6 == 0;
+    const isGenerationFinished = this.currentRound % 6 == 1;
 
     const isMatchFinished = this.animationTimer >= this.timeLimit || this.finishLoop;
     const isStart = this.animationTimer < this.startDelay;
