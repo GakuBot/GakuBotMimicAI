@@ -69,7 +69,7 @@ const contentText = ["You play. The AI learns.<br><br>After every round that you
   <div class='mb-5'>This game gives a much bigger advantage to the opponent than GakuBot Mimic Classic mode, so if you find this move too difficult, try <a href='../mimic/mimic.html'>Classic mode here.</a></div>",
 "You move via tapping in the direction that you want to move in.<br><br> A yellow reticule should appear wherever you click on the screen.<br><br> Your yellow circle will move in that direction",
 "Will you make a beeline for the target? <br><br>Will you be agressive and first seek to subdue your opponent by tagging them before going towards the objective? <br><br>And what will the computer do?",
-"For more information, and other versions of Gakubot, see <a class='btn btn-primary' href='https://www.gakubot.com'>GakuBot.com</a>"];
+"For more information about how GakuBot works, and other versions of Gakubot, see <a class='btn btn-primary' href='https://www.gakubot.com'>GakuBot.com</a>.<br><br> If you have a question regarding GakuBot, or want to be kept updated with any GakuBot news, then feel free to follow GakuBot on Twitter at <a href='https://twitter.com/GakuBotAi'>@GakuBotAi</a> or send an email to <a href='javascript:void(0)' onclick='window.open(\"mailto:gakubot.ai@gmail.com\", \"_system\");'>gakubot.ai@gmail.com</a>"];
 const buttonText = ["Rules ▶", "Guide ▶", "Strategy ▶", "Versions ▶", "Menu"];
 
 let pageNumber = 0;
