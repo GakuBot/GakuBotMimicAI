@@ -63,7 +63,12 @@
     <splash density="port-xxxhdpi" src="favicons/res/screen/android/splash-port-xxxhdpi.png"/>
   </platform>
 
+
+
   <gap:plugin name="phonegap-admob" source="npm"/>
+  <plugin name="cordova-plugin-whitelist"/>
+  <access origin="*" />
+  <access launch-external="yes" origin="mailto:*" />
   <allow-navigation href="https://www.gakubot.com" />
   <allow-navigation href="https://support.unicef.org/" />
   <allow-navigation href="*://*.gakubot.com/*" />
