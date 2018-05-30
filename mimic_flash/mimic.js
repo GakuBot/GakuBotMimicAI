@@ -304,8 +304,8 @@ function Mimic(){
 
     document.getElementById("loading-icon").classList.remove("d-none");
 
-    const learningRate = .1;
-    const noOfRepetitions = 500;
+    const learningRate = .075;
+    const noOfRepetitions = 550;
 
     this.currentGeneration++;
 
