@@ -19,7 +19,7 @@
 
 ## How does it work?
 
-* This game uses the [Synaptic](http://caza.la/synaptic/) library for supervised learning of a liquid state network.
+* This game uses the [Snyaptic](http://caza.la/synaptic/) library for supervised learning of a liquid state network.
 
 ## More info
 
