@@ -38,7 +38,8 @@ function Canvas(canvas) {
     };
 
     this.textDraw = function(text, positionX, positionY, color) {
-        context.font = "bold " + (height/20) + "px Bookman";
+        const textSize = height*0.7 < width ? (height/20) : (width/14);
+        context.font = "bold " + textSize + "px Bookman";
         context.fillStyle = color;
         context.fillText(text,positionX,positionY)
 

@@ -208,7 +208,7 @@ function Draw() {
   }
 
 }
-// 
-// const resizeDraw = new Draw();
-// resizeDraw.resize();
+
+const resizeDraw = new Draw();
+resizeDraw.resize();
 // window.addEventListener("resize", resizeDraw.resize);

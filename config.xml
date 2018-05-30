@@ -64,6 +64,8 @@
   </platform>
 
   <gap:plugin name="phonegap-admob" source="npm"/>
+  <allow-navigation href="https://www.gakubot.com" />
+  <allow-navigation href="https://support.unicef.org/" />
   <allow-navigation href="*://*.gakubot.com/*" />
   <allow-navigation href="*://*.gakubot.com" />
   <allow-navigation href="*://gakubot.com/*" />
