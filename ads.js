@@ -5,7 +5,7 @@ function onDeviceReady() {
     return
   }
 
-  const resizeDrawForAds = new Draw();
+  //const resizeDrawForAds = new Draw();
   //document.addEventListener(admob.events.onAdLoaded, resizeDrawForAds.resize);
   //document.addEventListener(admob.events.onAdFailedToLoad, resizeDrawForAds.resize);
 
