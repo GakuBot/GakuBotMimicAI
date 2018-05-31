@@ -308,7 +308,7 @@ function Mimic(){
     this.currentGeneration++;
 
     for(let trainingReps = 0; trainingReps < noOfRepetitions; trainingReps++){
-      //shuffleArray(this.trainingData);
+      shuffleArray(this.trainingData);
       for(let trainingDataCounter = 0; trainingDataCounter < this.trainingData.length; trainingDataCounter++){
         this.opponentNetwork.activate(this.trainingData[trainingDataCounter]["input"]);
         this.opponentNetwork.propagate(learningRate, this.trainingData[trainingDataCounter]["output"]);

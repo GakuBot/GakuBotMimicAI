@@ -310,7 +310,7 @@ function Mimic(){
     this.currentGeneration++;
 
     for(let trainingReps = 0; trainingReps < noOfRepetitions; trainingReps++){
-      //shuffleArray(this.trainingData);
+      shuffleArray(this.trainingData);
       for(let trainingDataCounter = 0; trainingDataCounter < this.trainingData.length; trainingDataCounter++){
         this.opponentNetwork.activate(this.trainingData[trainingDataCounter]["input"]);
         this.opponentNetwork.propagate(learningRate, this.trainingData[trainingDataCounter]["output"]);
@@ -340,4 +340,15 @@ function notNAElseZero(value){
   }else{
     return value
   }
+}
+
+function shuffleArray(a) {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = a[i];
+        a[i] = a[j];
+        a[j] = x;
+    }
+    return a;
 }
