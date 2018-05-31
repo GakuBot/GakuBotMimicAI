@@ -161,4 +161,6 @@ var roundOver = function(){
   document.getElementById("post-game-results-played").innerHTML =  "Played: " + noOfGames;
   document.getElementById("post-game-results-won").innerHTML =  "Won: " + Math.floor((100 * (noOfWins / (noOfWins + noOfLosses)))) + "% (" + noOfWins + "/" + (noOfWins + noOfLosses) + ")";
   document.getElementById("post-game-results-lost").innerHTML = "Lost: " + Math.floor((100 * (noOfLosses / (noOfWins + noOfLosses)))) + "% (" + noOfLosses + "/" + (noOfWins + noOfLosses) + ")";
+  document.getElementById("post-game-results-won-bar").style.width = Math.floor(100 * (noOfWins / (noOfWins + noOfLosses))) + "%";
+  document.getElementById("post-game-results-lost-bar").style.width = Math.floor(100 * (noOfLosses / (noOfWins + noOfLosses))) + "%";
 }
