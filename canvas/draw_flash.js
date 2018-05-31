@@ -61,11 +61,11 @@ function Draw() {
       const normalLineThickness = 1;
       const extraThickLine = 7;
 
-      if(playerTrail.length > 40){
+      if(playerTrail.length > 20){
         playerTrail.pop();
       }
 
-      if(opponentTrail.length > 40){
+      if(opponentTrail.length > 20){
         opponentTrail.pop();
       }
 
@@ -112,11 +112,11 @@ function Draw() {
       const normalLineThickness = 6;
       const extraThickLine = 7;
 
-      if(playerTrail.length > 40){
+      if(playerTrail.length > 20){
         playerTrail.pop();
       }
 
-      if(opponentTrail.length > 40){
+      if(opponentTrail.length > 20){
         opponentTrail.pop();
       }
 
