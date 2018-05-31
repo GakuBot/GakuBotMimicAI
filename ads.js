@@ -5,6 +5,10 @@ function onDeviceReady() {
     return
   }
 
+  const resizeDrawForAds = new Draw();
+  document.addEventListener(admob.events.onAdLoaded, function (e) {resizeDrawForAds.resize()});
+  document.addEventListener(admob.events.onAdFailedToLoad, function (e) {resizeDrawForAds.resize()});
+
   document.removeEventListener('deviceready', onDeviceReady, false);
 
   // Set AdMobAds options:
