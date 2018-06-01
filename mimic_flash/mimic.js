@@ -36,7 +36,7 @@ function Mimic(){
   currentOpponentPosition: [],
   trainingData: [],
   generatePopulation: function () {
-    this.opponentNetwork = new Architect.Liquid(6, 30, 10, 5, 2);
+    this.opponentNetwork = new Architect.Perceptron(6, 30, 10, 5, 2);
 
     this.trainingData = mimicTrainingData; //initial training data just to get the thing started (1 round x 5 goes)
   },
