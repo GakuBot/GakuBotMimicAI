@@ -5,9 +5,15 @@ function onDeviceReady() {
     return
   }
 
-  //const resizeDrawForAds = new Draw();
-  //document.addEventListener(admob.events.onAdLoaded, resizeDrawForAds.resize);
-  //document.addEventListener(admob.events.onAdFailedToLoad, resizeDrawForAds.resize);
+  if(typeof resizeDraw !== "undefined"){
+    document.addEventListener(admob.events.onAdLoaded, function(){
+      resizeDraw.resize()
+    });
+    
+    document.addEventListener(admob.events.onAdFailedToLoad, function(){
+      resizeDraw.resize()
+    });
+  }
 
   document.removeEventListener('deviceready', onDeviceReady, false);
 
