@@ -37,7 +37,7 @@ function Mimic(){
   currentOpponentPosition: [],
   trainingData: [],
   generatePopulation: function () {
-    this.opponentNetwork = new Architect.Liquid(6, 30, 10, 5, 2);
+    this.opponentNetwork = new Architect.Liquid(6, 30, 2, 50, 25);
 
     this.trainingData = mimicTrainingData; //initial training data just to get the thing started (1 round x 5 goes)
   },
@@ -307,7 +307,7 @@ function Mimic(){
     document.getElementById("loading-icon").classList.remove("d-none");
 
     const learningRate = .075;
-    const noOfRepetitions = 300;
+    const noOfRepetitions = 400;
 
     this.currentGeneration++;
 
