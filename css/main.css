@@ -57,9 +57,17 @@ body{
 }
 
 .btn-primary{
-  background-color: rgba(172, 236, 219, 0.7);
+  background-color: rgba(172, 236, 219, 0.7) !important;
   color: rgb(70, 70, 70) !important;
-  border-color: rgba(172, 236, 219, 1);
+  border-color: rgba(172, 236, 219, 1) !important;
+}
+
+.btn-primary:active,
+.btn-primary:hover,
+.btn-primary:visited{
+  background-color: rgba(172, 236, 219, 0.3) !important;
+  color: rgb(70, 70, 70) !important;
+  border-color: rgba(172, 236, 219, 0.5) !important;
 }
 
 #canvas-container{

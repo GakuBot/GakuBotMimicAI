@@ -59,7 +59,7 @@ let evolutionIterationProcess;
 let playProcess;
 let movementProcess;
 
-const headerText = ["Gakubot Mimic", "Rules", "How to play", "Strategy", "Other versions"];
+const headerText = ["Gakubot Mimic", "Rules", "How to play", "Strategy", "About"];
 const titleText = ["This is a machine learning game", "Rules:", "Movement", "How will you play?", ""];
 const contentText = ["You play. The AI learns.<br><br>After every round that you play, the AI looks at the decisions that you made and learns from them.<br><br> Then it uses this information to try and imitate the way that you play.",
 "<div class='mb-5'><div class='w-75 d-inline-block'>You are a yellow circle.</div><img class='w-20 ml-5p align-top' src='../images/player.png'></div>\
@@ -69,7 +69,7 @@ const contentText = ["You play. The AI learns.<br><br>After every round that you
   <div class='mb-5'>This game gives a much bigger advantage to the opponent than GakuBot Mimic Classic mode, so if you find this move too difficult, try <a href='../mimic/mimic.html'>Classic mode here.</a></div>",
 "You move via tapping in the direction that you want to move in.<br><br> A yellow reticule should appear wherever you click on the screen.<br><br> Your yellow circle will move in that direction",
 "Will you make a beeline for the target? <br><br>Will you be agressive and first seek to subdue your opponent by tagging them before going towards the objective? <br><br>And what will the computer do?",
-"For more information about how GakuBot works, and other versions of Gakubot, see <a class='btn btn-primary' href='https://www.gakubot.com'>GakuBot.com</a>.<br><br> If you have a question regarding GakuBot, or want to be kept updated with any GakuBot news, then feel free to follow GakuBot on Twitter at <a href='https://twitter.com/GakuBotAi'>@GakuBotAi</a> or send an email to <a href='javascript:void(0)' onclick='window.open(\"mailto:gakubot.ai@gmail.com\", \"_system\");'>gakubot.ai@gmail.com</a>"];
+"GakuBot Mimic AI is controlled by a Liquid State Machine that is trained on your actions. This Liquid State Machine is an implementation of the Synaptic.js library.<br>For other prototype versions of Gakubot, see <a class='btn btn-primary' href='https://www.gakubot.com'>GakuBot.com</a>.<br><br> If you have a question regarding GakuBot, or want to be kept updated with any GakuBot news, then feel free to follow GakuBot on Twitter at <a href='https://twitter.com/GakuBotAi'>@GakuBotAi</a> or send an email to <a href='javascript:void(0)' onclick='window.open(\"mailto:gakubot.ai@gmail.com\", \"_system\");'>gakubot.ai@gmail.com</a>"];
 const buttonText = ["Rules ▶", "Guide ▶", "Strategy ▶", "Versions ▶", "Menu"];
 
 let pageNumber = 0;
