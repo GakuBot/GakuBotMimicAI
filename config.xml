@@ -2,7 +2,7 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
     xmlns:gap   = "https://www.gakubot.com"
     id          = "com.gakubot"
-    versionCode = "3"
+    versionCode = "4"
     version     = "1.0.1" >
 
   <name>GakuBot Mimic</name>
