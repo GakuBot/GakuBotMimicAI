@@ -2,7 +2,7 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
     xmlns:gap   = "https://www.gakubot.com"
     id          = "com.gakubot"
-    versionCode = "4"
+    versionCode = "5"
     version     = "1.0.1" >
 
   <name>GakuBot Mimic</name>
@@ -51,7 +51,7 @@
 
   <platform name="android">
     <gap:plugin name="phonegap-admob" source="npm"/>
-    <preference name="android-minSdkVersion" value="19" />
+    <preference name="android-minSdkVersion" value="14" />
     <preference name="android-targetSdkVersion" value="26" />
     <preference name="SplashMaintainAspectRatio" value="true"/>
     <preference name="SplashShowOnlyFirstTime" value="true"/>
